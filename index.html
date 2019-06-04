@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="keywords" content="技术，管理，编程，php，设计模式，框架，架构，linux">
+<meta property="og:type" content="website">
+<meta property="og:title" content="行思錄">
+<meta property="og:url" content="https://dzthink.github.io/index.html">
+<meta property="og:site_name" content="行思錄">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="行思錄">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://dzthink.github.io/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>行思錄</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">行思錄</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay hungry,Stay foolish</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dzthink.github.io/2016/01/04/php taint扩展分析(原创)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zxduan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行思錄">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2016/01/04/php taint扩展分析(原创)/" class="post-title-link" itemprop="url">php taint扩展分析</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-01-04 00:00:00" itemprop="dateCreated datePublished" datetime="2016-01-04T00:00:00+08:00">2016-01-04</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-04 14:54:12" itemprop="dateModified" datetime="2019-06-04T14:54:12+08:00">2019-06-04</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h3><p><strong><a href="http://www.laruence.com/2012/02/14/2544.html" target="_blank" rel="noopener">php taint</a></strong>是大神Laruence开发的一款侦测php安全漏洞的扩展程序，往下看之前请自行先了解下。</p>
+<p>最近在公司部署到开发环境，发现taint没有正确甄别出存在漏洞的代码，只好自己分析修改了。废话少述，挽起袖子…开撸!</p>
+<hr>
+<h3 id="一、taint做了什么"><a href="#一、taint做了什么" class="headerlink" title="一、taint做了什么"></a>一、taint做了什么</h3><p>taint扩展的原理其实并不复杂，四句话就可以讲清楚：</p>
+<blockquote>
+<ol>
+<li>所有由用户提交的数据都是‘不安全’的</li>
+<li>所有由上述不安全数据经过计算产生的数据都<strong>可能</strong>是‘不安全’的(这大概也是taint名称的由来吧)</li>
+<li>对上述数据进行过滤，转义操作可以让数据转化为安全数据</li>
+<li><strong>直接(不处理)</strong>使用不安全的数据进行输出，数据库操作，目录遍历，shell命令…都是被不允许的</li>
+</ol>
+</blockquote>
+<p><strong>$_GET,$_POST,$_COOKIE数组内所有数据都被添加了特定标记</strong><br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a = $_GET[<span class="string">'a'</span>];</span><br><span class="line">$b = $_POST[<span class="string">'b'</span>];</span><br><span class="line">$c = $_COOKIE[<span class="string">'c'</span>];</span><br></pre></td></tr></table></figure></p>
+<p><strong>标记过的数据经过特定运算产生的数据同样添加了特定标记</strong><br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$d = $a.<span class="string">'dd'</span>;</span><br><span class="line">$e = strval($a);<span class="comment">//去字符串值，标准库函数</span></span><br><span class="line">$f = explode($a); <span class="comment">//返回值$e数组中每个成员都被标记</span></span><br><span class="line">$g = implode($a); <span class="comment">//如果$_GET['a']是个数组，输出的$f变量就可能包含危险字符</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>标记过的数据进行了过滤、转义等操作可以移除该标记</strong><br>  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$d = addslash($d);</span><br><span class="line">$f = htmlspecialchars($d);</span><br></pre></td></tr></table></figure></p>
+<p><strong>标记过的数据用于输出，数据库，文件系统，shell操作会触发一个严重错误!</strong></p>
+<pre><code>Warning: main() [function.echo]:Attempt to echo a string that might be tainted in %s.php on line %d
+</code></pre><p>详见laruence另外一篇文章<a href="http://www.laruence.com/2012/02/18/2560.html" target="_blank" rel="noopener">Taint-0.3.0(A XSS codes sniffer) released</a></p>
+<hr>
+<h3 id="二、如何给数据添加标记"><a href="#二、如何给数据添加标记" class="headerlink" title="二、如何给数据添加标记"></a>二、如何给数据添加标记</h3><p>为了讲清楚这个问题，需要先了解下php内核空间是如何存储变量的。</p>
+<p>写过php的人都知道，php是弱类型的语言，基本类型之间可以自动转换，但是php依然是有类型的，翻阅下php手册就会发现php有8种数据类型:</p>
+<blockquote>
+<p><strong>四种基本类型</strong> (bool，int，float[double]，string)</p>
+</blockquote>
+<blockquote>
+<p><strong>两种复合类型</strong> (array，object)</p>
+</blockquote>
+<blockquote>
+<p><strong>两种特殊类型</strong> (resource,NULL)</p>
+</blockquote>
+<p>而上述类型在php内核(c语言)中全是一种类型–<strong>zval</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">zval_struct</span> <span class="title">zval</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">zval_struct</span> &#123;</span></span><br><span class="line">   	zvalue_value value;		<span class="comment">//变量值</span></span><br><span class="line">   	zend_uchar type;		<span class="comment">//变量类型(bool,int,float,string,array,object,resource,null)</span></span><br><span class="line">   	zend_uint refcount__gc;	<span class="comment">//引用计数</span></span><br><span class="line">   	zend_uchar is_ref__gc;	<span class="comment">//是否是引用类型</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">union</span> _zvalue_value &#123;</span><br><span class="line">   	<span class="keyword">long</span> lval;				<span class="comment">//int,bool,resource 值</span></span><br><span class="line">   	<span class="keyword">double</span> dval;			<span class="comment">//float 值</span></span><br><span class="line">   	<span class="class"><span class="keyword">struct</span> &#123;</span>				<span class="comment">//string 值</span></span><br><span class="line">       	<span class="keyword">char</span> *val;</span><br><span class="line">       	<span class="keyword">int</span> len;</span><br><span class="line">   	&#125; str;</span><br><span class="line">   	HashTable *ht;			<span class="comment">//array 值</span></span><br><span class="line">   	zend_object_value obj;	<span class="comment">//object值</span></span><br><span class="line">&#125; zvalue_value;</span><br></pre></td></tr></table></figure></p>
+<p>这里我们只关注string类型(为什么自己思考下)，string结构体中包含两个字段：一个char型指针和一个整型数，前者表示字符串首地址，后者表示字符串实际长度。</p>
+<p>回想下在C语言中仅用一个char型指针来表示字符串，结尾以一个字节的 <strong>\0</strong> 来表示,这里并不探讨php内核为什么要如此表达字符串，但是这种方式却给了taint扩展标记字符串而不影响其他功能的方法。正因为上述方式，php内核中的字符串在进行各种处理时不依赖于字符串结尾的<strong>\0</strong>(尽管该\0依然存在)，taint扩展得以在需要标记的字符串后边添加了4个额外的字节，并在其中写如了一个特定的魔数<strong>0x6A8FCE84</strong>。</p>
+<pre><code>index.php?a=dangers;
+$a = $_GET[&apos;a&apos;];
+</code></pre><p>上述字符串$a在经过标记后在内核中表示如下<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.val = <span class="number">0x64616E67</span> <span class="number">0x65727300</span> <span class="number">0x6A8FCE84</span>	<span class="comment">//演示，大端系统和小端系统是不同的</span></span><br><span class="line">str.len = <span class="number">7</span>;</span><br></pre></td></tr></table></figure></p>
+<p>注意到魔数出现在0x657273__00__(<strong>\0</strong>)后面并且<strong>长度len</strong>依然正确存储着字符串的实际长度，标记操作不对正常功能产生任何影响</p>
+<hr>
+<h3 id="三、给‘污染’的数据添加标记"><a href="#三、给‘污染’的数据添加标记" class="headerlink" title="三、给‘污染’的数据添加标记"></a>三、给‘污染’的数据添加标记</h3><p>php内核中字符串的拷贝是用下面的函数完成的，传入源字符串指针及长度，返回一个新的字符串指针，这也证明了在字符串后面加上4个字节的魔数不影响该字符串的操作。</p>
+<pre><code>//Zend/zend_variables.c:123
+zvalue-&gt;value.str.val = (char *) estrndup_rel(zvalue-&gt;value.str.val, zvalue-&gt;value.str.len);
+</code></pre><p>现在考虑如下代码:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a = $_GET[<span class="string">'a'</span>];				<span class="comment">//$_GET['a']是标记数据，假如$_GET['a'] = 'dangers';</span></span><br><span class="line">$a1 = $a;						<span class="comment">//赋值操作</span></span><br><span class="line">$b = $a.<span class="string">'dd'</span>;					<span class="comment">//字符串连接</span></span><br><span class="line">$c = substr($a, <span class="number">0</span>, strlen($a));	<span class="comment">//函数加工</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>如上文所述，从$a拷贝7个字节长度的字符串到$a1过程中，并不会拷贝最后4个字节的魔数，标记丢失了,同理，$b的标记也丢失了。</li>
+<li>函数substr取变量$a的指定部分拷贝到一个全新的变量并返回，很容易想到这个返回值可能包含了$a中的恶意数据，但却没有正确的标记出来</li>
+</ul>
+<p>显然，为了解决上面两个问题，我们需要在这些字符串操作过程中加如一些自己的逻辑从而将运算结果也标记为不安全。上述操作大概可以分为两类:<br>赋值，连接…(zend虚拟机的opcode操作)、substr，trim，strstr等标准库函数。</p>
+<p>opcode这不再展开了(呵呵，我也没没十分弄清楚)，记住一点：opcode就是实体机中的cpu指令，每个php opcode在内核中都对应着一个C函数称为opcode_handler_t，并且zend虚拟机向外暴露了一个api用来注册自己的处理函数，如下：</p>
+<pre><code>zend_set_user_opcode_handler（zend_uchar opcode, user_opcode_handler_t handler）
+</code></pre><p>taint正式利用这个api，重写了几个关键的opcode(ZEND_CONCAT,ZEND_ASSIGN_CONCAT,ZEND_ASSIGN,ZEND_ASSIGN_REF…)。</p>
+<p>至于标准库函数(包括其他扩展暴露到用户空间的函数)就更容易了，php内核中在内存中有一张函数表，这是一张hash表，taint扩展在初始化阶段替换了函数表中对应函数的指针，从而插入了自己的逻辑，这里我贴出substr函数的源码:<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* &#123;&#123;&#123; proto string substr(string $string, int $start[, int $length])</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">PHP_FUNCTION(taint_substr)</span><br><span class="line">&#123;</span><br><span class="line">	zval *str;</span><br><span class="line">	<span class="keyword">long</span> start, length;</span><br><span class="line">   	<span class="keyword">int</span>	tainted = <span class="number">0</span>;</span><br><span class="line">	<span class="comment">//解析参数</span></span><br><span class="line">	<span class="keyword">if</span> (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, <span class="string">"zl|l"</span>, &amp;str, &amp;start, &amp;length) == FAILURE) &#123;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//判断参数是否是一个被标记的字符串</span></span><br><span class="line">	<span class="keyword">if</span> (IS_STRING == Z_TYPE_P(str) &amp;&amp; PHP_TAINT_POSSIBLE(str)) &#123;</span><br><span class="line">		tainted = <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//调用原函数</span></span><br><span class="line">	TAINT_O_FUNC(substr)(INTERNAL_FUNCTION_PARAM_PASSTHRU);</span><br><span class="line">	<span class="comment">//根据taint字段值标记返回值</span></span><br><span class="line">	<span class="keyword">if</span> (tainted &amp;&amp; IS_STRING == Z_TYPE_P(return_value) &amp;&amp; Z_STRLEN_P(return_value)) &#123;</span><br><span class="line">		Z_STRVAL_P(return_value) = erealloc(Z_STRVAL_P(return_value), Z_STRLEN_P(return_value) + <span class="number">1</span> + PHP_TAINT_MAGIC_LENGTH);</span><br><span class="line">		PHP_TAINT_MARK(return_value, PHP_TAINT_MAGIC_POSSIBLE);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* &#125;&#125;&#125; */</span></span><br></pre></td></tr></table></figure></p>
+<p>到这里基本上完成taint扩展的原理分析了，有兴趣的可以进一步了解下</p>
+<hr>
+<h3 id="错误警告"><a href="#错误警告" class="headerlink" title="错误警告"></a>错误警告</h3><p>同上文的原理，taint重写了部分输出语句的opcode(ZEND_ECHO,ZEND_PRINT…),部分标准库函数（fopen，mysql_query，PDO::query，exec…），当检测到参数是一个标记过的变量时触发一个错误！</p>
+<h3 id="为什么公司开发环境taint扩展不能用"><a href="#为什么公司开发环境taint扩展不能用" class="headerlink" title="为什么公司开发环境taint扩展不能用"></a>为什么公司开发环境taint扩展不能用</h3><p>公司用了yii开发框架，了解了taint原理后，阅读yii模板渲染部分的实现时发现了如下代码:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">renderInternal</span><span class="params">($_viewFile_,$_data_=null,$_return_=false)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// we use special variable names here to avoid conflict when extracting data</span></span><br><span class="line">	<span class="keyword">if</span>(is_array($_data_))</span><br><span class="line">		extract($_data_,EXTR_PREFIX_SAME,<span class="string">'data'</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		$data=$_data_;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>yii在渲染的调用了extract函数，这是php标准库的函数，作用是将数组中的所有成员导入到当前执行栈的符号表中，taint扩展并没有重写这个函数，导致在执行后所有标记都丢失了，考虑到该函数在mvc框架中使用频度，便修改了taint扩展，重写了extract函数(由于该函数并不返回字符串，而是直接导入到符号表中，与上面所述的函数大有差别，实现比较复杂，我的实现方法也很狗屎，这里就不细讲，期待Laruence大神给出一个官方方案),实际上还有urlencode，urldecode函数也需要重写。</p>
+<hr>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>taint侦测危险代码的错误原理<strong>简单粗暴</strong>(往往是最有效的)，会有漏网之鱼，也可能伤及无辜，但却能督促开发人员有一个好的编码习惯：不相信客户端的任何数据，时刻谨记数据净化的重要性!</p>
+<p>taint扩展目前版本还未区分不同攻击类型，htmlspecialchars能够用来防范xss，但对数据库查询却不起作用，addslashs对针对shell，数据库的攻击会有作用，但是对xss却用处不大… 我的改进建议是充分的用好那4个字节的魔数，可以选用前3个字节作为一个特殊标识，充分利用后面1个字节来记录字符串依然对哪些攻击类型有风险（而不是一刀切的标记有或者无风险）。当对字符串调用了htmlspecialchars后仅仅将标识xss攻击的1一个数据位置为0，依此类推，只有当所有攻击类型都被标记为0后改字符串才是一个完全干净的数据</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dzthink.github.io/2015/11/26/php源码分析(2)-编译&执行/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zxduan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行思錄">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2015/11/26/php源码分析(2)-编译&执行/" class="post-title-link" itemprop="url">php源码分析(2)-编译&执行</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2015-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2015-11-26T00:00:00+08:00">2015-11-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-04 14:35:30" itemprop="dateModified" datetime="2019-06-04T14:35:30+08:00">2019-06-04</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>上一篇中将php核心内容归结为三件事情：</p>
+<ol>
+<li>编译：将php源码编译为opcode（zend_op_array)</li>
+<li>执行：将上述opcode序列按顺序执行</li>
+<li>执行上述两项功能所需要的基础环境(对外接口，基本数据结构，内存管理，线程安全…)</li>
+</ol>
+<p>今天分享下前面两项是如何进行的——<strong>编译和执行</strong></p>
+<h3 id="从哪里开始编译和执行的"><a href="#从哪里开始编译和执行的" class="headerlink" title="从哪里开始编译和执行的"></a>从哪里开始编译和执行的</h3><p>先看如下一段代码,定义在<code>/Zend/zend.c:1309</code>行（PHP5.6）<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ZEND_API <span class="keyword">int</span> <span class="title">zend_execute_scripts</span><span class="params">(<span class="keyword">int</span> type TSRMLS_DC, zval **retval, <span class="keyword">int</span> file_count, ...)</span> <span class="comment">/* &#123;&#123;&#123; */</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   	va_list files;</span><br><span class="line">   	<span class="keyword">int</span> i;</span><br><span class="line">   	zend_file_handle *file_handle;</span><br><span class="line">	......</span><br><span class="line">       EG(active_op_array) = zend_compile_file(file_handle, type TSRMLS_CC);</span><br><span class="line">       <span class="keyword">if</span> (file_handle-&gt;opened_path) &#123;</span><br><span class="line">           <span class="keyword">int</span> dummy = <span class="number">1</span>;</span><br><span class="line">           zend_hash_add(&amp;EG(included_files), file_handle-&gt;opened_path, <span class="built_in">strlen</span>(file_handle-&gt;opened_path) + <span class="number">1</span>, (<span class="keyword">void</span> *)&amp;dummy, <span class="keyword">sizeof</span>(<span class="keyword">int</span>), <span class="literal">NULL</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       zend_destroy_file_handle(file_handle TSRMLS_CC);</span><br><span class="line">       <span class="keyword">if</span> (EG(active_op_array)) &#123;</span><br><span class="line">           EG(return_value_ptr_ptr) = retval ? retval : <span class="literal">NULL</span>;</span><br><span class="line">           zend_execute(EG(active_op_array) TSRMLS_CC);</span><br><span class="line">           zend_exception_restore(TSRMLS_C);</span><br><span class="line">		......</span><br><span class="line">	&#125;</span><br><span class="line">	......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>基本上php源码文件都是通过调用这个函数来完成解析(编译)和执行的，函数做了三件事情：</p>
+<ol>
+<li>调用<strong><code>zend_compile_file</code></strong>函数将要执行的php文件编译成为op_array结构，并将其设置全局active_op_array</li>
+<li>调用<strong><code>zend_execute</code></strong>函数执行上面编译出来的zend_op_array</li>
+<li>如果存在异常，尝试从异常中恢复</li>
+</ol>
+<p>不知不觉中，我们今天两大主角华丽丽的登场了——<strong><code>zend_compile_file</code></strong>(编译)和<strong><code>zend_execute</code></strong>（执行）</p>
+<h3 id="从编译开始"><a href="#从编译开始" class="headerlink" title="从编译开始"></a>从编译开始</h3><p>zend_compile_file定义如下：</p>
+<pre><code>ZEND_API zend_op_array *(*zend_compile_file)(zend_file_handle *file_handle, int type TSRMLS_DC);
+</code></pre><p>这是一个函数指针，具体实现函数实现在zend引擎初始化（<code>/Zend/zend.c:683</code>）时赋值的，这样做的好处是不言自明的（想想apc的实现）<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">if</span> HAVE_DTRACE</span></span><br><span class="line"><span class="comment">/* build with dtrace support */</span></span><br><span class="line">	zend_compile_file = dtrace_compile_file;</span><br><span class="line">	zend_execute_ex = dtrace_execute_ex;</span><br><span class="line">	zend_execute_internal = dtrace_execute_internal;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	zend_compile_file = compile_file;</span><br><span class="line">	zend_execute_ex = execute_ex;</span><br><span class="line">	zend_execute_internal = <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure></p>
+<p>闲话少说，让我们来目光转移到编译真正的主角上<code>compile_file</code>(/Zend/zend_language_scanner.c:555),代码就不贴了。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dzthink.github.io/2015/11/26/php源码分析(1)-认识全局/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zxduan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行思錄">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2015/11/26/php源码分析(1)-认识全局/" class="post-title-link" itemprop="url">php源码分析(1)-认识全局</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2015-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2015-11-26T00:00:00+08:00">2015-11-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-04 14:35:30" itemprop="dateModified" datetime="2019-06-04T14:35:30+08:00">2019-06-04</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>早在13年底就有了研究php内核源码的想法，当时苦于C语言相关知识已趋于生疏，加之网上php内核相关资料非常稀少便暂时放下了。今年因工作上需要，动手修改了一个php扩展taint并萌生了深入php内核源码的冲动，这半年来一边了解nginx实现，一边恶补了C和linux系统相关知识，正是万事具备，只欠东风!</p>
+<p>回想自己在阅读过程中查阅资料的辛苦，便想着将自己的笔记整理成<strong>《php源码分析系列》</strong>博文以供后来者参照，疏漏不严谨甚至错误恐怕在所难免的，各位读者如发现需更正之处，请不吝指教(联系方式:dzthink#qq.com)。</p>
+<h3 id="开篇约定"><a href="#开篇约定" class="headerlink" title="开篇约定"></a>开篇约定</h3><p>此文为系列开篇，从宏观上阐述整个php生命周期，为避免陷入细节洪流（以后逐步深入，各个击破），约定如下:</p>
+<blockquote>
+<p><strong>1. 文中所使用的代码均为php5.6</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>2. 以cli执行模式为例(执行环境最为干净)</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>3. 关注流程，弱化细节(比如如何解析命令行参数…)</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>4. 无视线程安全相关内容(略去所有ZTS宏定义部分)</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>5. linux阵营的死忠，所以别问为什么没有windows相关内容</strong></p>
+</blockquote>
+<h3 id="php架构"><a href="#php架构" class="headerlink" title="php架构"></a>php架构</h3><p>先来看下php架构图(图片来源于laruence大神博客):</p>
+<p><a href="http://www.laruence.com/2008/08/12/180.html" target="_blank" rel="noopener"><img src="img/php-arch-293x300.jpg" alt="php架构图"></a></p>
+<p>上图清晰的表达了php内核的层次结构，从上至下依次为SAPI、PHP、Zend API、Zend Engine(Application部分已经不是php范畴了)，下面分别简述下各层的功能划分</p>
+<p><strong>Sapi(SAPI.h:220)</strong>——Server Application Programing Interface（ 服务器端应用编程接口），这里接口是广义上的接口（不是面向对象中Interface），我们可以称之为约定。sapi是上层应用程序和php之间通信方式约定——配置信息，环境信息，请求参数，结果输出，系统初始化和系统关闭等。</p>
+<p><strong>PHP</strong>——可能这里比较迷惑（又一个PHP，are you kidding？），之所以称这里为php，我想是因为我们平时所看到使用到的php语言特性，功能基本上都是通过这一层暴露出来的。</p>
+<p><strong>ZEND_API</strong>——像sapi一样，ZEND_API定义了php层如何和zend引擎通信，当然这里的api要相对具体些，实际上是zend引擎向外提供的一些列函数来访问其内部组件和各种状态数据。</p>
+<p><strong>ZEND</strong>——相信这个东西对于每个php开发者来说都是如雷贯耳了，实际上zend是伴随着php4才出现的，它是当仁不让的php核心，提供语言级别的基础设施。</p>
+<h3 id="php生命周期"><a href="#php生命周期" class="headerlink" title="php生命周期"></a>php生命周期</h3><p>生命周期是什么就不在赘述了,如下图所示,其中MINIT——模块初始化，RINIT——模块请求初始化，SCRIPT——编译执行脚本，RSHUTDOWN-模块请求关闭，MSHUTDOWN——模块关闭</p>
+<p><img src="img/2012_02_02_05.jpg" alt="单进程生命周期"><br><img src="img/2012_02_02_06.jpg" alt="多线程生命周期"></p>
+<h3 id="启动阶段"><a href="#启动阶段" class="headerlink" title="启动阶段"></a>启动阶段</h3><p>这一阶段为后面的请求处理，脚本编译执行准备环境，涉及到大量的全局变量，全局函数指针，各种数据结构初始化，下面是我认为启动过程中比较重要的一些步骤：</p>
+<ul>
+<li><p>启动zend，这恐怕是整个启动阶段最为重要的一步了，这一步初始化了内存管理器、opcode处理函数表、编译执行相关的函数指针、运行时的全局函数表，类表，自动全局变量表，常量表，注册了编译进php的模块等等</p>
+</li>
+<li><p>启动gc，此处仅仅是初始化了gc_globals变量</p>
+</li>
+<li>php配置文件解析（php_init_config）,这是一个长达350行的函数，除了冗长的目录地址处理和搜索外，php配置文件解析最值得注意的是zend_parse_ini_file函数，跟踪这个函数实现会发现它定义在zend_ini_parser.y的文件中，这个正是bison(php使用的语法分析器)的语法描述文件。所以简单来说，php的配置文件解析是使用词法分析器和语法分析器完成的（感觉有点杀鸡用牛刀的感觉）。</li>
+<li>加载编译到php内核模块，php扩展，zend扩展并逐一完成模块初始化工作(MINIT)</li>
+</ul>
+<h3 id="请求初始化阶段"><a href="#请求初始化阶段" class="headerlink" title="请求初始化阶段"></a>请求初始化阶段</h3><ul>
+<li>这一阶段是对应每个独立的请求的，所完成的工作用两个字概括来说就是<strong>重置</strong>——重置编译器，执行器;重置各个扩展模块(RINIT)；重置输出栈；重置请求相关数据结构；<br>###编译执行阶段###<br>毫无疑问，这一阶段就是将传入的php脚本编译成opcode，然后开始按顺序执行的过程。当然编译和执行是交替出现的，比如出现执行事遇到include语句时就会停下来编译并执行引入的脚本。如下图所示：</li>
+</ul>
+<p><img src="img/php执行流程.png" alt="php执行流程"></p>
+<p>这一阶段是php最为核心的部分，这里不再展开来讲了，后面会有专门文章详细探讨这一部分内容</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>整个php核心部分归结来所干了三件事情：</p>
+<ol>
+<li>编译：将php源码编译为opcode（zend_op_array)</li>
+<li>执行：将上述opcode序列按顺序执行</li>
+<li>执行上述两项功能所需要的基础环境(外部信息交换，基本数据结构，内存管理，线程安全…)</li>
+</ol>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>这篇文章断断续续的写了几个星期，实在很难把握其详略程度，很多细节现在也不是很明了，但把所有内容都弄清楚再回来把内容写出来又不是我的风格（那时可能就没有写的出来的兴趣和必要了）。还是使用迭代的概念吧，先来个粗糙(甚至包含错漏)的版本，等后面详细了解每一个组成部分的时候再不断的雕琢。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">zxduan</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/dzthink" title="GitHub &rarr; https://github.com/dzthink" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/dzthink@qq.com" title="E-Mail &rarr; dzthink@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zxduan</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
